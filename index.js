@@ -32,6 +32,7 @@ PLAYERS.forEach(renderPlayer)
 
 
 /***** Deliverable 1 *****/
+
 function toggleColor(element) {
   if (element.style.color === "red") {
     element.style.color = "black"
@@ -39,6 +40,14 @@ function toggleColor(element) {
     element.style.color = "red"
   }
 }
+
+const headerToggle = document.querySelector('h1#header')
+document.querySelector('h1#header').addEventListener('click', function(e){
+  toggleColor(headerToggle)
+});
+//headerToggle.addEventListener('click', toggleColor(headerToggle));
+
+
 
 
 /***** Deliverable 2 *****/
